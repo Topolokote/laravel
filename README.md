@@ -7,3 +7,11 @@ The created command line to run the code is : "php artisan request:fake {process
 ## Artisan Command File
 The command file is located in app\Console\Commands\RequestFakePost.php
 
+## Considerations to run project
+Remember to apply next commands to the project´s copy at your local:
+composer install
+composer dumpautoload -o
+cp .env.example .env
+php artisan key:generate
+php artisan config:clear
+php artisan config:cache
